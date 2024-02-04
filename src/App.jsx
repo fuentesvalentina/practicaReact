@@ -1,13 +1,17 @@
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-// aqui agregamos la logica del componente
+  // aqui agregamos la logica del componente
   return (
     //aqui puedo escribir un poco mas de logica
-    <h1 className="text-center display-3">
-      {/* aqui agrego todo el maquetado del componente */}
-      prueba</h1>
-  )
+    <section className="container my-4">
+      <h1 className="text-center display-3">
+        {/* aqui agrego todo el maquetado del componente */}
+        Contador
+      </h1>
+      <p></p>
+    </section>
+  );
 }
 
-export default App
+export default App;
