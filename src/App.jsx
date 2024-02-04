@@ -3,6 +3,8 @@ import TituloSecundario from "./components/TituloSecundario";
 
 function App() {
   // aqui agregamos la logica del componente
+  const anioActual = new Date();
+
   return (
     //aqui puedo escribir un poco mas de logica
     <section className="container my-4">
@@ -10,8 +12,16 @@ function App() {
         {/* aqui agrego todo el maquetado del componente */}
         Contador
       </h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Officiis quis earum voluptate, laudantium, aspernatur sunt possimus excepturi nulla repudiandae adipisci dolorum minima. Voluptatibus quia aperiam nesciunt natus magni quo omnis?</p>
-    <TituloSecundario></TituloSecundario>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <br /> Officiis quis earum voluptate, laudantium, aspernatur sunt
+        possimus excepturi nulla repudiandae adipisci dolorum minima.
+        Voluptatibus quia aperiam nesciunt natus magni quo omnis?
+      </p>
+      <TituloSecundario
+        comision="c75i"
+        anioActualProps={anioActual.getFullYear()}
+      ></TituloSecundario>
     </section>
   );
 }

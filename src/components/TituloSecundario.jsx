@@ -1,7 +1,10 @@
-import React from "react";
-
-const TituloSecundario = () => {
-return <h2>Prueba de titulo secundario</h2>;
+const TituloSecundario = ({comision, anioActualProps}) => {
+return (
+<section>
+<h2>Titulo generado con props de la comisión: {comision}</h2>
+<p>Año actual: {anioActualProps}</p>
+</section>
+);
 };
 
 export default TituloSecundario;
