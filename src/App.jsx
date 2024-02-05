@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import TituloSecundario from "./components/TituloSecundario";
+import Contador from "./components/Contador";
 
 function App() {
   // aqui agregamos la logica del componente
@@ -22,6 +23,7 @@ function App() {
         comision="c75i"
         anioActualProps={anioActual.getFullYear()}
       ></TituloSecundario>
+      <Contador></Contador>
     </section>
   );
 }
